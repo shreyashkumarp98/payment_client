@@ -1,0 +1,38 @@
+<div class="card">
+  <h2>Payments</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Reference</th>
+        <th>Amount</th>
+        <th>Currency</th>
+        <th>Created At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let p of payments">
+        <td>{{ p.reference }}</td>
+        <td>{{ p.amount }}</td>
+        <td>{{ p.currency }}</td>
+        <td>{{ p.createdAt | date: 'medium' }}</td>
+        <td>
+          <div class="actions">
+            <button class="edit" (click)="edit(p.reference)">
+              Edit
+            </button>
+            <button class="delete" (click)="delete(p.reference)">
+              Delete
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class= "button-class">
+  <button class="add" (click)="add()">Add Payments</button>
+</div>

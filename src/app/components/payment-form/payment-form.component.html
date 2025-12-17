@@ -1,0 +1,56 @@
+<div class="card">
+  <h2>{{ isEditMode? 'Update Payment' : 'Add Payment' }}</h2>
+
+  <form (ngSubmit)="submit()" #paymentForm="ngForm">
+
+    <div class="form-group" *ngIf="isEditMode">
+      <label>Reference</label>
+      <input
+        type="text"
+        [(ngModel)]="payment.reference"
+        name="reference"
+        readonly
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Amount</label>
+      <input
+        type="number"
+        [(ngModel)]="payment.amount"
+        name="amount"
+        required
+        min="0.01"
+        #amount = "ngModel"
+      />
+
+      <div class="error" *ngIf="amount.invalid && amount.touched">
+        Amount must be greater than zero
+      </div>
+
+    </div>
+
+
+
+    <div class="form-group">
+      <label>Currency</label>
+      <select
+        [(ngModel)]="payment.currency"
+        name="currency"
+        required
+      >
+        <option value="" disabled>Select currency</option>
+        <option *ngFor="let c of currencies" [value]="c">
+          {{ c }}
+        </option>
+      </select>
+    </div>
+
+    <div class="actions">
+      <button type="submit" [disabled]="paymentForm.invalid">
+        {{isEditMode? 'Update' : 'Create' }}
+      </button>
+    </div>
+
+  </form>
+</div>

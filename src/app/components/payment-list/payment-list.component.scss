@@ -1,0 +1,96 @@
+.card {
+  margin: 40px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+    padding: 12px;
+    background: #f5f5f5;
+    font-weight: 600;
+    color: #555;
+  }
+
+  td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+  }
+
+  tr:hover {
+    background: #fafafa;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+
+button.edit {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #3b82f6; // blue
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+
+  &:hover {
+    background: #2563eb;
+  }
+}
+
+
+button.delete {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+
+  &:hover {
+    background: #dc2626;
+  }
+}
+
+
+.button-class {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
+  .add{
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 6px;
+
+    border: none;
+    background: #36b37d;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+
+    &:hover {
+      background: #3ab14c;
+    } 
+  }
+}
+
+

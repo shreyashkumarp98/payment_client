@@ -36,6 +36,28 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+
+## Snapshots
+
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/f8110a27-b7e5-46bc-ae35-315f039dd48f" />
+
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/1ed3a2e1-a22d-4326-8e68-a135a6728d93" />
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/7266641a-583e-4380-b743-b83279a1ce83" />
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/b29c6dc8-31e7-4f0a-b624-c473b02f6baf" />
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/1da83d90-0223-4864-acfc-7258f02c5279" />
+<img width="1792" height="1120" alt="image" src="https://github.com/user-attachments/assets/171dd573-d475-4344-baaa-74eba8f1e220" />
+
+
+
+
+
+
+
+
+
+
+
+
 ## Running unit tests
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
